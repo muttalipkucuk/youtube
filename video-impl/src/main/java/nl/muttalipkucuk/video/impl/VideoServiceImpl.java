@@ -25,7 +25,7 @@ public class VideoServiceImpl implements VideoService {
     }
 
     @Override
-    public Topic<VideoEvent> videoEvents() {
+    public Topic<nl.muttalipkucuk.youtube.api.VideoEvent> videoEvents() {
         return TopicProducer.taggedStreamWithOffset(VideoEvent.TAG.allTags(), (tag, offset) ->
                 persistentEntityRegistry.eventStream(tag, offset).map(eventAndOffset -> {
 
