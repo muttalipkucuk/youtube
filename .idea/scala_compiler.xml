@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="youtube_9785,youtube,youtube-impl,lagom-internal-meta-project-service-locator,lagom-internal-meta-project-cassandra,youtube-api,lagom-internal-meta-project-kafka,youtube-stream-api,youtube-stream-impl" />
+  </component>
+</project>

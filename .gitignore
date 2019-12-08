@@ -1,3 +1,8 @@
+# Generated files
 **/target/**
 
-.idea
+# Ignore following in .idea-folder
+.idea/**/tasks.xml
+.idea/**/workspace.xml
+
+
