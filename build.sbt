@@ -52,6 +52,30 @@ lazy val `youtube-stream-impl` = (project in file("youtube-stream-impl"))
   )
   .dependsOn(`youtube-stream-api`, `youtube-api`)
 
+lazy val `video-api` = (project in file("video-api"))
+  .settings(common)
+  .settings(
+    libraryDependencies ++= Seq(
+      lagomJavadslApi,
+      lombok
+    )
+  )
+
+lazy val `video-impl` = (project in file("video-impl"))
+  .enablePlugins(LagomJava)
+  .settings(common)
+  .settings(
+    libraryDependencies ++= Seq(
+      lagomJavadslPersistenceCassandra,
+      lagomJavadslKafkaBroker,
+      lagomLogback,
+      lagomJavadslTestKit,
+      lombok
+    )
+  )
+  .settings(lagomForkedTestSettings)
+  .dependsOn(`video-api`)
+
 val lombok = "org.projectlombok" % "lombok" % "1.18.8"
 
 def common = Seq(

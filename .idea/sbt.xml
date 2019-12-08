@@ -14,6 +14,10 @@
             <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/project" />
             <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-service-locator" />
             <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-service-locator/project" />
+            <option value="$PROJECT_DIR$/video-api" />
+            <option value="$PROJECT_DIR$/video-api/project" />
+            <option value="$PROJECT_DIR$/video-impl" />
+            <option value="$PROJECT_DIR$/video-impl/project" />
             <option value="$PROJECT_DIR$/youtube-api" />
             <option value="$PROJECT_DIR$/youtube-api/project" />
             <option value="$PROJECT_DIR$/youtube-impl" />

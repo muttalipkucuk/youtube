@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="video-impl" target="1.8" />
       <module name="youtube-impl" target="1.8" />
       <module name="youtube-stream-impl" target="1.8" />
     </bytecodeTargetLevel>

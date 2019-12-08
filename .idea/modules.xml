@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-kafka-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-kafka-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-service-locator.iml" filepath="$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-service-locator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-service-locator-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lagom-internal-meta-project-service-locator-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/video-api/video-api.iml" filepath="$PROJECT_DIR$/video-api/video-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/video-api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/video-impl/video-impl.iml" filepath="$PROJECT_DIR$/video-impl/video-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video-impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/video-impl-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/youtube.iml" filepath="$PROJECT_DIR$/.idea/youtube.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-api.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-api-build.iml" />
@@ -18,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-stream-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-stream-api-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-stream-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-stream-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-stream-impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-stream-impl-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/youtube-video-api.iml" filepath="$PROJECT_DIR$/.idea/modules/youtube-video-api.iml" />
     </modules>
   </component>
 </project>
