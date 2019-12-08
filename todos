@@ -1,0 +1,38 @@
+video
+    - id/uuid
+    - name
+    - description
+    - channel
+    - likes
+    - dislikes
+    - comments
+
+channel
+    - id
+    - name
+    - description
+    - links
+
+comment
+    - id/uuid
+    - text
+    - channel
+    - likes
+    - dislikes
+
+
+
+
+???
+user
+    - id
+    - first name
+    - surname
+    - email
+    - password
+    - subscribedChannel
+    - myVideos
+
+search
+
+recommandation
