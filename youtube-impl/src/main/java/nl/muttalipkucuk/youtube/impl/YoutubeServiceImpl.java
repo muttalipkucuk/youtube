@@ -11,8 +11,8 @@ import com.lightbend.lagom.javadsl.persistence.PersistentEntityRegistry;
 
 import javax.inject.Inject;
 
-import nl.muttalipkucuk.youtube.api.GreetingMessage;
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.GreetingMessage;
+import nl.muttalipkucuk.video.api.YoutubeService;
 import nl.muttalipkucuk.youtube.impl.YoutubeCommand.*;
 
 /**
@@ -48,7 +48,7 @@ public class YoutubeServiceImpl implements YoutubeService {
     }
 
     @Override
-    public Topic<nl.muttalipkucuk.youtube.api.YoutubeEvent> helloEvents() {
+    public Topic<nl.muttalipkucuk.video.api.YoutubeEvent> helloEvents() {
         // We want to publish all the shards of the hello event
         return TopicProducer.taggedStreamWithOffset(YoutubeEvent.TAG.allTags(), (tag, offset) ->
                 // Load the event stream for the passed in shard tag
@@ -57,11 +57,11 @@ public class YoutubeServiceImpl implements YoutubeService {
                     // Although these two events are currently identical, in future they may
                     // change and need to evolve separately, by separating them now we save
                     // a lot of potential trouble in future.
-                    nl.muttalipkucuk.youtube.api.YoutubeEvent eventToPublish;
+                    nl.muttalipkucuk.video.api.YoutubeEvent eventToPublish;
 
                     if (eventAndOffset.first() instanceof YoutubeEvent.GreetingMessageChanged) {
                         YoutubeEvent.GreetingMessageChanged messageChanged = (YoutubeEvent.GreetingMessageChanged) eventAndOffset.first();
-                        eventToPublish = new nl.muttalipkucuk.youtube.api.YoutubeEvent.GreetingMessageChanged(
+                        eventToPublish = new nl.muttalipkucuk.video.api.YoutubeEvent.GreetingMessageChanged(
                                 messageChanged.getName(), messageChanged.getMessage()
                         );
                     } else {

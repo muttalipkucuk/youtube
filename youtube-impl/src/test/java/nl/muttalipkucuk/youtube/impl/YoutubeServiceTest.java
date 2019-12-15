@@ -2,8 +2,8 @@ package nl.muttalipkucuk.youtube.impl;
 
 import org.junit.Test;
 
-import nl.muttalipkucuk.youtube.api.GreetingMessage;
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.GreetingMessage;
+import nl.muttalipkucuk.video.api.YoutubeService;
 
 import static com.lightbend.lagom.javadsl.testkit.ServiceTest.defaultSetup;
 import static com.lightbend.lagom.javadsl.testkit.ServiceTest.withServer;

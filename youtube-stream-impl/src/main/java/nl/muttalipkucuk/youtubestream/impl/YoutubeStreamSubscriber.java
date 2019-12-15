@@ -3,8 +3,8 @@ package nl.muttalipkucuk.youtubestream.impl;
 import akka.Done;
 import akka.stream.javadsl.Flow;
 
-import nl.muttalipkucuk.youtube.api.YoutubeEvent;
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.YoutubeEvent;
+import nl.muttalipkucuk.video.api.YoutubeService;
 
 import javax.inject.Inject;
 import java.util.concurrent.CompletableFuture;

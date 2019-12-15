@@ -8,9 +8,8 @@ public class VideoEntity extends PersistentEntity<VideoCommand, VideoEvent, Vide
 
     @Override
     public Behavior initialBehavior(Optional<VideoState> snapshotState) {
-
+        this.entityId();
         // TODO
-        
         return null;
     }
 }

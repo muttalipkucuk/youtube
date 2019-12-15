@@ -57,7 +57,8 @@ lazy val `video-api` = (project in file("video-api"))
   .settings(
     libraryDependencies ++= Seq(
       lagomJavadslApi,
-      lombok
+      lombok,
+      vavr
     )
   )
 
@@ -77,6 +78,7 @@ lazy val `video-impl` = (project in file("video-impl"))
   .dependsOn(`video-api`)
 
 val lombok = "org.projectlombok" % "lombok" % "1.18.8"
+val vavr = "io.vavr" % "vavr" % "1.0.0-alpha-3"
 
 def common = Seq(
   javacOptions in Compile += "-parameters"

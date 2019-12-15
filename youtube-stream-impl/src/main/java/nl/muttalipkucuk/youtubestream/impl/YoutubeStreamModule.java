@@ -2,8 +2,7 @@ package nl.muttalipkucuk.youtubestream.impl;
 
 import com.google.inject.AbstractModule;
 import com.lightbend.lagom.javadsl.server.ServiceGuiceSupport;
-
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.YoutubeService;
 import nl.muttalipkucuk.youtubestream.api.YoutubeStreamService;
 
 /**

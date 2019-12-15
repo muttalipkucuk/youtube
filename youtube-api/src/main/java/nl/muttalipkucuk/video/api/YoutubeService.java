@@ -1,4 +1,4 @@
-package nl.muttalipkucuk.youtube.api;
+package nl.muttalipkucuk.video.api;
 
 import akka.Done;
 import akka.NotUsed;

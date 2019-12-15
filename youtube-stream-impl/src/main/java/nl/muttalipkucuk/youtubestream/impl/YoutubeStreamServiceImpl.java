@@ -4,7 +4,7 @@ import akka.NotUsed;
 import akka.stream.javadsl.Source;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
 
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.YoutubeService;
 import nl.muttalipkucuk.youtubestream.api.YoutubeStreamService;
 
 import javax.inject.Inject;

@@ -1,4 +1,4 @@
-package nl.muttalipkucuk.youtube.api;
+package nl.muttalipkucuk.video.api;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonSubTypes;

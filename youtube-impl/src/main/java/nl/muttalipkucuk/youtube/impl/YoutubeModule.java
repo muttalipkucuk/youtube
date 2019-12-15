@@ -3,7 +3,7 @@ package nl.muttalipkucuk.youtube.impl;
 import com.google.inject.AbstractModule;
 import com.lightbend.lagom.javadsl.server.ServiceGuiceSupport;
 
-import nl.muttalipkucuk.youtube.api.YoutubeService;
+import nl.muttalipkucuk.video.api.YoutubeService;
 
 /**
  * The module that binds the YoutubeService so that it can be served.
