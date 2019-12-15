@@ -29,7 +29,7 @@ public interface VideoRequest {
     @Value
     @Builder
     @AllArgsConstructor
-    class Upsert {
+    class Update {
         @NonNull
         @Builder.Default
         Option<String> name = Option.none();

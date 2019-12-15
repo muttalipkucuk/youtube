@@ -20,7 +20,7 @@ public class RequestValidator {
         ).ap((notUsed, notUsed2) -> request);
     }
 
-    public static Validation<Seq<DomainError>, VideoRequest.Upsert> validate(VideoRequest.Upsert request) {
+    public static Validation<Seq<DomainError>, VideoRequest.Update> validate(VideoRequest.Update request) {
         return Validation.valid(request);
     }
 

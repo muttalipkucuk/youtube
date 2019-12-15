@@ -19,8 +19,8 @@ public class CommandBuilder {
         return VideoCommand.Get.builder().build();
     }
 
-    public static VideoCommand.Upsert build(VideoRequest.Upsert req) {
-        return VideoCommand.Upsert.builder()
+    public static VideoCommand.Update build(VideoRequest.Update req) {
+        return VideoCommand.Update.builder()
             .name(req.getName())
             .description(req.getDescription())
             .likes(req.getLikes())

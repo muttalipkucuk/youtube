@@ -21,7 +21,7 @@ public interface VideoService extends Service {
 
     ServiceCall<NotUsed, Video> get(UUID id);
 
-    ServiceCall<VideoRequest.Upsert, Video> upsert(UUID id);
+    ServiceCall<VideoRequest.Update, Video> update(UUID id);
 
     ServiceCall<NotUsed, Done> remove(UUID id);
 
@@ -34,7 +34,7 @@ public interface VideoService extends Service {
                 restCall(Method.GET, "/health", this::health),
                 restCall(Method.POST, "api/video", this::create),
                 restCall(Method.GET, "api/video?id", this::get),
-                restCall(Method.PUT, "api/video?id", this::upsert),
+                restCall(Method.PUT, "api/video?id", this::update),
                 restCall(Method.DELETE, "api/video?id", this::remove)
             )
             .withTopics(

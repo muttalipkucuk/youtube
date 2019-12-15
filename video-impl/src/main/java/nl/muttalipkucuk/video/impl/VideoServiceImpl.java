@@ -61,9 +61,9 @@ public class VideoServiceImpl implements VideoService {
     }
 
     @Override
-    public ServiceCall<VideoRequest.Upsert, Video> upsert(UUID id) {
+    public ServiceCall<VideoRequest.Update, Video> update(UUID id) {
         return req -> RequestValidator.validate(req)
-            .map(validatedRequest -> upsertVideo(id, CommandBuilder.build(validatedRequest)))
+            .map(validatedRequest -> updateVideo(id, CommandBuilder.build(validatedRequest)))
             .fold(
                 err -> {
                     throw ErrorHandler.handle(err);
@@ -95,7 +95,7 @@ public class VideoServiceImpl implements VideoService {
             .ask(CommandBuilder.buildGet());
     }
 
-    private CompletionStage<VideoState> upsertVideo(UUID id, VideoCommand.Upsert cmd) {
+    private CompletionStage<VideoState> updateVideo(UUID id, VideoCommand.Update cmd) {
         return persistentEntityRegistry
             .refFor(VideoEntity.class, id.toString())
             .ask(cmd);

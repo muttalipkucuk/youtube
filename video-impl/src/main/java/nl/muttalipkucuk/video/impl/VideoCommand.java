@@ -48,7 +48,7 @@ public interface VideoCommand extends Jsonable {
     @Wither
     @Immutable
     @Getter
-    final class Upsert implements VideoCommand, CompressedJsonable, PersistentEntity.ReplyType<VideoState> {
+    final class Update implements VideoCommand, CompressedJsonable, PersistentEntity.ReplyType<VideoState> {
         @NonNull
         @Builder.Default
         Option<String> name = Option.none();
